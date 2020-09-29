@@ -16,7 +16,8 @@ public class OneAxisGyro : MonoBehaviour
 
         Vector3 targetEulerAngles = previousEulerAngles + gyroInput * Time.deltaTime * Mathf.Rad2Deg;
         targetEulerAngles.x = 15f; // Only this line has been added
-        targetEulerAngles.y = 0.0f;
+        targetEulerAngles.y = 0f;
+        
 
         transform.eulerAngles = targetEulerAngles;
     }

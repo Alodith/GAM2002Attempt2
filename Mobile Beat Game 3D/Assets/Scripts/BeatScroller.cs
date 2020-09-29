@@ -21,10 +21,10 @@ public class BeatScroller : MonoBehaviour
 
         if (!hasStarted)
         {
-            if (swipeControls.Tap)
+            /*if (swipeControls.Tap)
             {
                 hasStarted = true;
-            }
+            }*/
         
         
         }
