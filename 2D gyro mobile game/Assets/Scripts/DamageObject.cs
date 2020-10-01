@@ -34,6 +34,7 @@ public class DamageObject : MonoBehaviour
         {
             blocked = true;
         }
+        //else if (other.tag == "BottomCollider") deal damage to the player and trigger the damage animation.
     }
 
     
