@@ -5,7 +5,7 @@ using UnityEngine;
 public class DamageObject : MonoBehaviour
 {
     public bool blocked;
-
+    public AudioSource blocksound;
     
 
     // Start is called before the first frame update
@@ -33,6 +33,7 @@ public class DamageObject : MonoBehaviour
         if (other.tag == "Shield")
         {
             blocked = true;
+            blocksound.Play();
         }
         //else if (other.tag == "BottomCollider") deal damage to the player and trigger the damage animation.
     }
